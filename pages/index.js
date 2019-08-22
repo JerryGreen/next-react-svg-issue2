@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Nav from '~/nav'
 import Shape from '@assets/shape.svg'
 
-// import Nav from '../components/nav'
+// import Nav from '../src/nav'
 // import Shape from '../assets/shape.svg'
 
 const Home = () => (
