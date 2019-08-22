@@ -16,7 +16,7 @@ const withCustomAliases = (nextConfig = {}) => ({
 })
 
 module.exports = withCustomAliases(withReactSvg({
-  include: resolve('./components/svg'),
+  include: resolve('./assets'),
   webpack(config) {
     return config
   }
