@@ -1,8 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+
 import Nav from '~/nav'
 import Shape from '@assets/shape.svg'
+
+// import Nav from '../components/nav'
+// import Shape from '../assets/shape.svg'
 
 const Home = () => (
   <div>
