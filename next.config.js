@@ -1,7 +1,7 @@
 const withReactSvg = require('next-react-svg')
 const { resolve } = require('path')
 
-const withCustomAliases = nextConfig => ({
+const withCustomAliases = (nextConfig = {}) => ({
   ...nextConfig,
   webpack(webpackConfig, options) {
     webpackConfig.resolve.alias['~'] = resolve('./components')
