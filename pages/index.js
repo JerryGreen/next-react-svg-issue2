@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Nav from '~/nav'
+import Shape from '@assets/shape.svg'
 
 const Home = () => (
   <div>
@@ -12,7 +13,10 @@ const Home = () => (
     <Nav />
 
     <div className='hero'>
-      <h1 className='title'>Welcome to Next.js!</h1>
+      <div className='titleBlock'>
+        <h1 className='title'>Welcome to Next.js!</h1>
+        <Shape className='icon' />
+      </div>
       <p className='description'>
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
@@ -41,15 +45,24 @@ const Home = () => (
 
     <style jsx>{`
       .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         width: 100%;
         color: #333;
       }
+      .titleBlock {
+        text-align: center
+      }
       .title {
+        display: inline;
         margin: 0;
-        width: 100%;
         padding-top: 80px;
         line-height: 1.15;
         font-size: 48px;
+      }
+      .icon {
+        display: inline;
       }
       .title,
       .description {
