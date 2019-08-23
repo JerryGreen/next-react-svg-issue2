@@ -797,6 +797,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@now/next@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@now/next/-/next-0.7.0.tgz#b172b4cc036c11a499ee6957b394cc7e4f4c9ff9"
+  integrity sha512-UuVWFvyIENTX8mH2dyoD2tnK5MZhDz3cSUHkxDdVx03XRhbwnXCs56y0L1FSPdTKpn9WoHi9GnG5JcfaqAJMGQ==
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -3152,6 +3157,11 @@ normalize-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+now@16.1.2:
+  version "16.1.2"
+  resolved "https://registry.yarnpkg.com/now/-/now-16.1.2.tgz#9c05dc83852a4ff80534fe3830b53fdf807ff974"
+  integrity sha512-Wqbox4tfh1kglgKOOHRE49bsZoy1TMHsVSnrnEbC98LU+aXmuh853kKheyDXckqIaTGDAgs7HYV12ONgppLwUw==
 
 npm-bundled@^1.0.1:
   version "1.0.6"
