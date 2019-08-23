@@ -1,11 +1,25 @@
+const { withPlugins } = require('next-compose-plugins')
 const withReactSvg = require('next-react-svg')
 const { resolve } = require('path')
 
-module.exports = withReactSvg({
-  include: resolve('assets'),
-  webpack(config) {
-    config.resolve.alias['~'] = resolve('src')
-    config.resolve.alias['@assets'] = resolve('assets')
-    return config
-  }
+const withCustomAliases = (nextConfig = {}) => ({
+  ...nextConfig,
+  webpack(webpackConfig, options) {
+    webpackConfig.resolve.alias['~'] = resolve('src')
+    webpackConfig.resolve.alias['@assets'] = resolve('assets')
+    webpackConfig.resolve.alias['@types'] = resolve('types')
+
+    if (typeof nextConfig.webpack === 'function') {
+      return nextConfig.webpack(webpackConfig, options)
+    }
+
+    return webpackConfig
+  },
 })
+
+module.exports = withPlugins([
+  withCustomAliases,
+  [withReactSvg, {
+    include: resolve('assets'),
+  }]
+])
